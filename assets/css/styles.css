@@ -286,9 +286,48 @@ nav ul li{
     height: 2rem;
 }
 
+/*Scroll to top button*/
+.scroll-up{
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.up-arrow{
+    width: 3rem;
+    height: 3rem;
+}
+/*Scroll to top button ends*/
+
+/*Footer section*/
 footer{
     background-color: var(--bg-color);
     padding: 1.25rem;
     text-align: center;
     margin: 2rem 0 0;
+}
+/*Footer section ends*/
+
+/*Media queries for responsiveness*/
+@media screen and (max-width: 720px) {
+    /*changes reflects on screen with a width of 720px and below*/
+    nav {
+        padding: 1.5rem 1rem;
+    }
+    nav u1{
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
 }
